@@ -1,0 +1,132 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #fff;
+  margin: 30px 0px;
+  padding: 0px 20px;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 2px 8px;
+  position: relative;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.menu ul li {
+  list-style: none;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.4s ease-in-out;
+}
+.switch_mobile {
+  border-radius: 50px;
+  height: 40px;
+  width: 42px;
+  color: white;
+  border: none;
+  background-color: #ff5700;
+  margin-left: 20px;
+  font-size: 16px;
+}
+.switch_mobile svg {
+  width: 16px !important;
+  height: 16px !important;
+}
+.ham_button {
+  background-color: #ff5700;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px;
+}
+.ham_button:hover {
+  color: #fff;
+}
+.menu ul li a:hover {
+  background-color: #ff5700;
+  width: 100px;
+  color: #fff;
+  padding: 15px 20px;
+}
+
+.mobileMenu {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 2px 8px;
+  display: none;
+}
+.mobileMenu ul {
+  margin: 0;
+  padding: 0;
+}
+.mobileMenu ul a {
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  text-align: center;
+  padding: 15px;
+  transition: 0.3s ease-in-out;
+}
+.mobileMenu ul a:hover {
+  background-color: #ff5700;
+  color: white;
+}
+.mobileMenu ul a:first-child:hover {
+  border-radius: 10px 10px 0px 0px;
+}
+.mobileMenu ul a:last-child:hover {
+  border-radius: 0px 0px 10px 10px;
+}
+.hamburger {
+  display: none;
+}
+.hamburger svg {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+/* Media Query */
+@media screen and (max-width: 1200px) {
+  .mobileMenu {
+    display: block;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    z-index: 2;
+  }
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+}

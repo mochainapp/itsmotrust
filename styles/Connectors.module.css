@@ -1,0 +1,55 @@
+.walletConnector {
+  background-color: #fff;
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.connectors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  transition: 0.3s ease-in;
+}
+.connectors h2 {
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+.connectors:hover {
+  box-shadow: rgb(0 0 0 / 15%) 0px 2px 8px;
+  border-radius: 20px;
+  background-color: #ff5700;
+  color: #fff !important;
+}
+.connectors img {
+  width: 50px !important;
+  height: 50px !important;
+}
+/* Media Query */
+@media screen and (max-width: 1200px) {
+  .connectors img {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .connectors h2 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .connectors {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .connectors {
+    flex-direction: row;
+  }
+  .connectors h2 {
+    font-size: 20px;
+  }
+}
