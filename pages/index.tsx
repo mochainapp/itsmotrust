@@ -35,7 +35,7 @@ const Index: NextPage = () => {
     <div className="container main">
       <Header />
       <Head>
-        <title>{isActive ? "Your Escrows" : "Connect Wallet"}</title>
+        <title>{isActive ? "Your Escrows" : "MO Chain Escrow Platform - MOTrust"}</title>
       </Head>
 
       {loading ? (
